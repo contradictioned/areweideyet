@@ -1,0 +1,72 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	color: #333;
+	background: url(sprinkles.png);
+}
+
+.container {
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2em 2em 2em 2em;
+	background-color: white;
+}
+
+section {
+	border-bottom: 2px solid #EEE;
+}
+
+section > ul {
+	padding: 0 0 0 0;
+}
+
+section > ul > li {
+	list-style-type: none;
+	border: 1px solid #EEE;
+	margin: 0 0 2em 0;
+	padding: 1em 1em 1em 1em;
+}
+
+h2 {
+	margin: 0px 0px 5px 0px;
+}
+
+p {
+	margin-top: .3em;
+	margin-bottom: .3em;
+}
+
+
+ul.features {
+	padding-left:1em;
+}
+ul.features > li {
+	list-style-type: none
+}
+ul.features > li:before {
+	padding-right: .4em;
+	content: '\2611';
+	color: #428bca;
+}
+
+
+
+a:link {
+	color: #f60;
+	text-decoration: none;
+}
+a:visited {
+	color: #f90;
+}
+a:hover {
+	color: #f60;
+	text-decoration: underline;
+} 
+a:focus {
+	color: #f60;
+	text-decoration: underline;
+}
+a:active {
+	color: #f60;
+}

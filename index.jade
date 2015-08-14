@@ -1,0 +1,87 @@
+doctype html
+html(lang="en")
+  head
+    title Are we (I)DE yet?
+    link(rel="stylesheet" href="style.css")
+    meta(charset="utf-8")
+  body
+    .container
+      header
+        h1 Are we (I)DE yet?
+        p An overview about the state of development environments and their integrated bretheren.
+        a(href="www.roflmao.uz") referenz likn
+
+      section
+        h1 Text Editors
+
+        ul
+          li
+            h2 Emacs
+            p
+              | For Emacs there is 
+              a(href="https://github.com/rust-lang/rust-mode") RustMode
+              |  installable from source or via MELPA, it brings
+            ul.features
+              li syntax highlighting
+              li snippets
+            p With 
+              a(href="https://github.com/flycheck/flycheck-rust") Flycheck
+              |  comes
+            ul.features
+              li syntax checking
+          li
+            h2 Sublime Text 2/3
+            p
+              a(href="https://packagecontrol.io/packages/Rust") Rust Package
+              |  brings 
+            ul.features
+              li syntax highlighting
+              li snippets
+              li build scripts
+            p
+              a(href="https://packagecontrol.io/packages/RustAutoComplete") RustAutoComplete
+              |  uses Racer to bring
+            ul.features
+              li auto-complete 
+              
+          li
+            h2 Vim
+            p
+              a(href="https://github.com/rust-lang/rust.vim") rust.vim
+              |  offers
+            ul.features
+              li syntax highlighting
+
+      section
+        h1 Integrated Development Environments
+
+        ul
+          li
+            h2 Eclipse
+            p The
+          li
+            h2 SolidOak
+            p
+              a(href="https://sekao.net/solidoak/") SolidOak
+              |  is the first Rust-specific IDE.
+              |  It has integrated
+            ul.features
+              li syntax highlighting
+              li code completion
+            p
+              |  It wraps Cargo instructions for creating, building, testing and running projects.
+
+      section
+        h1 Meta
+
+        ul
+          li
+            h2 Racer
+            p
+              a(href="https://github.com/phildawes/racer") Racer
+              |  is a code completion tool for Rust that is developed standalone.
+              |  It is the basis for code completion in pretty much every setup.
+
+      footer
+        p Background:
+        a(href="http://subtlepatterns.com/sprinkles/") Sprinkles 
