@@ -13,6 +13,26 @@ body {
 	background-color: white;
 }
 
+header {
+	border: 1px solid #EEE;
+	border-radius: 5px;
+	background: #F2ECD5;
+	padding: 2em 2em 2em 2em;
+	font-size: 20px;
+}
+
+.beta {
+	color: red;
+}
+
+h1 {
+	font-style: italic;
+	text-align: right;
+}
+h2 {
+	font-size: 20px;
+}
+
 section {
 	border-bottom: 2px solid #EEE;
 }
@@ -50,8 +70,20 @@ ul.features > li:before {
 	color: #428bca;
 }
 
+/* Footer */
+footer {
+	margin-top:3em;
+}
+footer > ul {
+	display: flex;
+}
+footer > ul > li {
+	list-style-type: none;
+	flex-grow: 1;
+}
 
 
+/* Links */
 a:link {
 	color: #f60;
 	text-decoration: none;
