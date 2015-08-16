@@ -79,6 +79,7 @@ footer > ul {
 }
 footer > ul > li {
 	list-style-type: none;
+	min-width: 0;
 	flex-grow: 1;
 }
 
