@@ -8,110 +8,93 @@ html(lang="en")
     .container
       header
         h1 Are we (I)DE yet?
-        p An overview about the state of Rust development environments and their integrated bretheren.
-        p.beta This overview is so much beta, it's likely that I have forgotten many things!
+        p
+          | An overview about the state of 
+          a(href="https://www.rust-lang.org/") Rust
+          |  support by text editors and their integrated bretheren.
+        p Below you find a table listing the comparable features of editors,
+          | followed up by specific information about single programs.
+          | The lowerest part presents some more tooling of Rust's ecosystem.
 
       section
+        include table.jade
+
         h1 Text Editors
+
 
         ul
           li
+            a(name="atom")
             h2 Atom
-            p
-              | The package 
+            p.packages
+              | Important packages: 
               a(href="https://atom.io/packages/language-rust") language-rust
-              |  brings
-            ul.features
-              li syntax highlighting
-              li code snippets
-            p
-              | With 
+              | , 
               a(href="https://atom.io/packages/linter-rust") linter-rust
-              |  (which relies on 
+              |  (relying on 
               a(href="https://atom.io/packages/linter") linter
-              | ) you get
-            ul.features
-              li linter
-            p
-              | Racer integration via 
+              | ), 
               a(href="https://atom.io/packages/racer") racer
-              |  brings
-            ul.features
-              li code completion
-
+            p.last-update(title="Last update") 2015-08-16
+              
 
           li
+            a(name="emacs")
             h2 Emacs
-            p
-              | For Emacs there is 
-              a(href="https://github.com/rust-lang/rust-mode") RustMode
-              |  installable from source or via MELPA, it brings
-            ul.features
-              li syntax highlighting
-              li snippets
-            p With 
-              a(href="https://github.com/flycheck/flycheck-rust") Flycheck
-              |  comes
-            ul.features
-              li syntax checking
-            p
-              a(href="https://github.com/phildawes/racer") Racer
-              |  gets you
-            ul.features
-              li code completion
+            p.packages
+              | Important packages: 
+              a(href="https://github.com/rust-lang/rust-mode") rust-mode
+              | , 
+              a(href="https://github.com/flycheck/flycheck-rust") flycheck-rust
+              | , 
+              a(href="https://github.com/racer-rust/emacs-racer") emacs-racer
+            p.last-update(title="Last update") 2015-08-16
 
           li
+            a(name="geany")
             h2 Geany
-            p Without further trouble Geany brings
-            ul.features
-              li syntax highlighting
-              li build scripts (Cargo support coming soon)
+            p.specific
+              | Specific highlights:
+              | Geany is one of the few editors with syntax highlighting out-of-the-box. 
+              | It has built in scripts to run rustc, and even cargo support is coming soon&trade;.
+            p.last-update(title="Last update") 2015-08-16
 
           li
+            a(name="kate")
             h2 Kate
-            p Kate has included
-            ul.features
-              li syntax highlighting
-            p
-              | With some help of 
-              a(href="https://github.com/phildawes/racer") Racer
-              |  you get
-            ul.features
-              li code completion
+            p.specific
+              | Specific highlights:
+              | Kate is one of the few editors with syntax highlighting out-of-the-box.
+            p.last-update(title="Last update") 2015-08-16
 
           li
+            a(name="sublime")
             h2 Sublime Text 2/3
-            p
+            p.packages
+              | Important packages: 
+              a(href="https://packagecontrol.io/packages/TOML") TOML
+              | , 
               a(href="https://packagecontrol.io/packages/Rust") Rust Package
-              |  brings 
-            ul.features
-              li syntax highlighting
-              li snippets
-              li build scripts
-            p
+              | , 
               a(href="https://packagecontrol.io/packages/RustAutoComplete") RustAutoComplete
-              |  uses Racer to bring
-            ul.features
-              li code completion 
+            
+            p.specific
+              | Specific highlights:
+              | Kate is one of the few editors with syntax highlighting out-of-the-box.
+            p.last-update(title="Last update") 2015-08-16
+            
           li
+            a(name="vim")
             h2 Vim
-            p
+            p.packages
+              | Important packages: 
               a(href="https://github.com/rust-lang/rust.vim") rust.vim
-              |  offers
-            ul.features
-              li syntax highlighting
-            p
-              | With 
-              a(href="https://github.com/phildawes/racer") Racer
-              |  you get
-            ul.features
-              li code completion
-              li goto definition
-            p
-              a(href="https://github.com/scrooloose/syntastic") Syntastic 
-              |  in addition to rust.vim you get
-            ul.features
-              li syntax checking
+              | , 
+              a(href="https://github.com/racer-rust/vim-racer") vim-racer
+              | , 
+              a(href="https://github.com/scrooloose/syntastic") syntastic 
+            p.last-update(title="Last update") 2015-08-18
+            
 
 
       section
@@ -119,25 +102,27 @@ html(lang="en")
 
         ul
           li
+            a(name="eclipse")
             h2 Eclipse
-            p
-              | The plugin 
+            p.packages
+              | Important packages: 
               a(href="https://rustdt.github.io") RustDT
-              |  works best when Racer is installed and then offers
+            p.specific With RustDT installed, you get:
             ul.features
-              li syntax highlighting
-              li snippets
               li project wizard
-              li goto definition
               li gdb debugging
+            p.last-update(title="Last update") 2015-08-16
+
           li
+            a(name="visualstudio")
             h2 Visual Studio (Community)
-            p
-              | With  
+            p.packages
+              | Important packages:
               a(href="https://github.com/PistonDevelopers/VisualRust") Visual Rust
-              |  you get
+              
+            p
+              | With Visual Rust you get
             ul.features
-              li syntax highlighting
               li project support
               li build scripts
               li autocomplete using Racer
@@ -149,34 +134,42 @@ html(lang="en")
               li using both the watch and the immediate window the runtime state can be changed
               li ability to drag and drop to change the next code line that will be executed
               li call stack view and navigation
+            p.last-update(title="Last update") 2015-09-25
+
           li
+            a(name="solidoak")
             h2 SolidOak
             p
               a(href="https://sekao.net/solidoak/") SolidOak
               |  is the first Rust-specific IDE.
               |  It has integrated
             ul.features
-              li syntax highlighting
               li code completion
             p
               |  It wraps Cargo instructions for creating, building, testing and running projects.
+            p.last-update(title="Last update") 2015-08-16
+
           li
+            a(name="intellij")
             h2 IntelliJ IDEA
             p
               | The 
               a(href="https://github.com/Vektah/idea-rust") Rust plugin
               |  is a bit outdated.
+            p.last-update(title="Last update") 2015-08-18
 
       section
         h1 Meta
 
         ul
           li
+            a(name="racer")
             h2 Racer
             p
               a(href="https://github.com/phildawes/racer") Racer
               |  is a code completion tool for Rust that is developed standalone.
               |  It is the basis for code completion in pretty much every setup.
+            p.last-update(title="Last update") 2015-08-16
 
       footer
         ul

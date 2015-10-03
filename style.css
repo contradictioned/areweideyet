@@ -9,7 +9,7 @@ body {
 	width: 900px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 2em 2em 2em 2em;
+	padding: 2em;
 	background-color: white;
 }
 
@@ -17,7 +17,7 @@ header {
 	border: 1px solid #EEE;
 	border-radius: 5px;
 	background: #F2ECD5;
-	padding: 2em 2em 2em 2em;
+	padding: 2em;
 	font-size: 20px;
 }
 
@@ -38,14 +38,14 @@ section {
 }
 
 section > ul {
-	padding: 0 0 0 0;
+	padding: 0;
 }
 
 section > ul > li {
 	list-style-type: none;
 	border: 1px solid #EEE;
 	margin: 0 0 2em 0;
-	padding: 1em 1em 1em 1em;
+	padding: 1em 1em 0em 1em;
 }
 
 h2 {
@@ -102,4 +102,82 @@ a:focus {
 }
 a:active {
 	color: #f60;
+}
+
+/* Headline links */
+h2 a:link {
+	color: #333;
+	text-decoration: none;
+}
+h2 a:visited {
+	color: #333;
+}
+h2 a:hover {
+	color: #f60;
+	text-decoration: underline;
+} 
+h2 a:focus {
+	color: #f60;
+	text-decoration: underline;
+}
+h2 a:active {
+	color: #f60;
+}
+
+
+/******************
+ * OVERVIEW TABLE *
+ *****************/
+
+/* borders */
+table#overview {
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+table#overview td {
+	border: 1px solid #CCC;
+}
+table#overview tbody tr {
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+table#overview tbody tr.separator {
+	border-top: 2px solid #CCC;
+}
+
+/* headers */
+table#overview thead tr th {
+	height: 130px;
+	white-space: nowrap;
+	vertical-align: bottom;
+	padding-bottom: 1em;
+}
+table#overview thead tr th div {
+	transform: rotate(-45deg);
+	width: 30px;
+}
+
+/* general style */
+table#overview td, table#overview th {
+	padding: .3em .6em;
+}
+
+div#overviewlegend {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+p.packages a {
+	padding: 4px;
+	margin: 2px;
+	background-color: #f9f9f9;
+	border-radius: 5px;
+}
+
+p.last-update {
+	text-align: right;
+	color: #CCC;
+	font-size: 12px;
 }
