@@ -169,6 +169,10 @@ div#overviewlegend {
 	text-align: center;
 }
 
+p.packages {
+	line-height: 22px;
+}
+
 p.packages a {
 	padding: 4px;
 	margin: 2px;
