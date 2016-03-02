@@ -10,9 +10,7 @@ How 2 contribute?
 
 Open an issue in the issue tracker,
 write me in IRC (same nickname),
-or fork the repository, edit and compile `index.jade` and send a pull request.
-
-(Yes, yes, index.html is committed in the repo, just for convenience)
+or fork the repository, edit and compile `index.jade` to check if it works, and send a pull request.
 
 
 Licence
