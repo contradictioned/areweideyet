@@ -15,7 +15,9 @@ table#overview
       th
         div Go-to Definition
       th
-        div Syntax Checking
+        div Debugging
+      th
+        div Documentation Tooltips
   tbody
     tr
       th.name
@@ -26,7 +28,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#bbedit") BBedit
@@ -36,7 +39,8 @@ table#overview
       td.completion
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#emacs") Emacs
@@ -46,7 +50,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#geany") Geany
@@ -56,7 +61,8 @@ table#overview
       td.completion
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#kate") Kate
@@ -66,7 +72,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     //-tr
     //-  th.name
     //-    a(href="#notepad") Notepad++
@@ -80,7 +87,8 @@ table#overview
       td.completion ✓<sup>1</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>1</sup>
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
     tr
       th(title="Sublime Text 2/3").name
         a(href="#sublime") Sublime
@@ -90,7 +98,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#vim") Vim
@@ -98,18 +107,20 @@ table#overview
       //-td.tomlhighlighting
       td.snippets ✓<sup>1</sup>
       td.completion ✓<sup>2</sup>
-      td.linting
+      td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#vscode") VS Code
       td.highlighting ✓
       td.snippets ✓
       td.completion ✓<sup>2</sup>
-      td.linting
+      td.linting  ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck
+      td.debugging ✓<sup>1</sup>
+      td.doctooltips ✓<sup>2</sup>
     //--------
     //- IDEs -
     //--------
@@ -122,17 +133,19 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto ✓<sup>1</sup>
-      td.syntaxcheck
+      td.debugging ✓<sup>1</sup>
+      td.doctooltips
     tr
       th.name
-        a(href="#visualstudio") Visual Studio
-      td.highlighting ✓
+        a(href="#intellij") IntelliJ IDEA
+      td.highlighting ✓<sup>1</sup>
       //-td.tomlhighlighting
-      td.snippets
-      td.completion ✓<sup>2</sup>
-      td.linting
-      td.goto ✓<sup>1</sup>
-      td.syntaxcheck
+      td.snippets ✓<sup>1</sup>
+      td.completion
+      td.linting ✓<sup>1</sup>
+      td.goto
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#solidoak") SolidOak
@@ -142,17 +155,19 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
-        a(href="#intellij") IntelliJ IDEA
-      td.highlighting ✓<sup>1</sup>
+        a(href="#visualstudio") Visual Studio
+      td.highlighting ✓
       //-td.tomlhighlighting
-      td.snippets ✓<sup>1</sup>
-      td.completion
+      td.snippets
+      td.completion ✓<sup>2</sup>
       td.linting
-      td.goto
-      td.syntaxcheck ✓<sup>1</sup>
+      td.goto ✓<sup>1</sup>
+      td.debugging ✓<sup>1</sup>
+      td.doctooltips
 
 #overviewlegend
   p
