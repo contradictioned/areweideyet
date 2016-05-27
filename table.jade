@@ -47,30 +47,7 @@ table#overview
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
       td.syntaxcheck ✓<sup>1</sup>
-    tr
-      th.name
-        a(href="#geany") Geany
-      td.highlighting ✓
-      //-td.tomlhighlighting
-      td.snippets
-      td.completion
-      td.linting
-      td.goto
-      td.syntaxcheck
-    tr
-      th.name
-        a(href="#kate") Kate
-      td.highlighting ✓
-      //-td.tomlhighlighting
-      td.snippets
-      td.completion ✓<sup>2</sup>
-      td.linting
-      td.goto
-      td.syntaxcheck
-    //-tr
-    //-  th.name
-    //-    a(href="#notepad") Notepad++
-    //-  td.highlighting
+
     tr
       th.name
         a(href="#textadept") Textadept
@@ -111,6 +88,31 @@ table#overview
       td.goto ✓<sup>2</sup>
       td.syntaxcheck
     //--------
+    //- More -
+    //--------
+    tr.show_more
+      td(colspan="7") Show more editors ⇩
+    tr.more
+      th.name
+        a(href="#geany") Geany
+      td.highlighting ✓
+      //-td.tomlhighlighting
+      td.snippets
+      td.completion
+      td.linting
+      td.goto
+      td.syntaxcheck
+    tr.more
+      th.name
+        a(href="#kate") Kate
+      td.highlighting ✓
+      //-td.tomlhighlighting
+      td.snippets
+      td.completion ✓<sup>2</sup>
+      td.linting
+      td.goto
+      td.syntaxcheck
+    //--------
     //- IDEs -
     //--------
     tr.separator
@@ -135,16 +137,6 @@ table#overview
       td.syntaxcheck
     tr
       th.name
-        a(href="#solidoak") SolidOak
-      td.highlighting ✓
-      //-td.tomlhighlighting
-      td.snippets
-      td.completion ✓<sup>2</sup>
-      td.linting
-      td.goto
-      td.syntaxcheck
-    tr
-      th.name
         a(href="#intellij") IntelliJ IDEA
       td.highlighting ✓<sup>1</sup>
       //-td.tomlhighlighting
@@ -153,7 +145,21 @@ table#overview
       td.linting
       td.goto
       td.syntaxcheck ✓<sup>1</sup>
-
+    tr.show_more
+      td(colspan="7") Show more IDEs ⇩
+    //--------
+    //- More -
+    //--------
+    tr.more
+      th.name
+        a(href="#solidoak") SolidOak
+      td.highlighting ✓
+      //-td.tomlhighlighting
+      td.snippets
+      td.completion ✓<sup>2</sup>
+      td.linting
+      td.goto
+      td.syntaxcheck
 #overviewlegend
   p
     | ✓ = supported out-of-the-box,

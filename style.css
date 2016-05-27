@@ -3,6 +3,7 @@ body {
 	font-size: 16px;
 	color: #333;
 	background: url(sprinkles.png);
+	background-color: #F2ECD5;
 }
 
 .container {
@@ -184,4 +185,28 @@ p.last-update {
 	text-align: right;
 	color: #CCC;
 	font-size: 12px;
+}
+
+/* Show more row */
+table#overview tr.show_more {
+	text-align: center;
+	background-color: #CCC;
+	line-height: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	color:#777;
+	padding: 1px;
+/* display: none; */
+}
+table#overview .hidden {
+	display: none;
+}
+
+/* This is initially hidden */
+table#overview tr.shown {
+  display: table-row !important;
+}
+
+table#overview tbody tr:hover:not(.show_more) {
+	background-color: #F2ECD5;
 }
