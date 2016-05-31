@@ -15,7 +15,9 @@ table#overview
       th
         div Go-to Definition
       th
-        div Syntax Checking
+        div Debugging
+      th
+        div Documentation Tooltips
   tbody
     tr
       th.name
@@ -25,8 +27,9 @@ table#overview
       td.snippets ✓<sup>1</sup>
       td.completion ✓<sup>2</sup>
       td.linting ✓<sup>1</sup>
-      td.goto ✓<sup>2</sup>
-      td.syntaxcheck
+      td.goto
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#bbedit") BBedit
@@ -36,7 +39,8 @@ table#overview
       td.completion
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#emacs") Emacs
@@ -46,7 +50,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
 
     tr
       th.name
@@ -57,7 +62,8 @@ table#overview
       td.completion ✓<sup>1</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>1</sup>
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
     tr
       th(title="Sublime Text 2/3").name
         a(href="#sublime") Sublime
@@ -67,7 +73,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting ✓<sup>1</sup>
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#vim") Vim
@@ -77,7 +84,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
     tr
       th.name
         a(href="#vscode") VS Code
@@ -86,12 +94,13 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto ✓<sup>2</sup>
-      td.syntaxcheck
+      td.debugging ✓<sup>1</sup>
+      td.doctooltips ✓<sup>2</sup>
     //--------
     //- More -
     //--------
     tr.show_more
-      td(colspan="7") Show more editors ⇩
+      td(colspan="8") Show more editors ⇩
     tr.more
       th.name
         a(href="#geany") Geany
@@ -101,7 +110,8 @@ table#overview
       td.completion
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     tr.more
       th.name
         a(href="#kate") Kate
@@ -111,7 +121,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
     //--------
     //- IDEs -
     //--------
@@ -124,17 +135,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto ✓<sup>1</sup>
-      td.syntaxcheck
-    tr
-      th.name
-        a(href="#visualstudio") Visual Studio
-      td.highlighting ✓
-      //-td.tomlhighlighting
-      td.snippets
-      td.completion ✓<sup>2</sup>
-      td.linting
-      td.goto ✓<sup>1</sup>
-      td.syntaxcheck
+      td.debugging ✓<sup>1</sup>
+      td.doctooltips
     tr
       th.name
         a(href="#intellij") IntelliJ IDEA
@@ -144,9 +146,21 @@ table#overview
       td.completion
       td.linting
       td.goto
-      td.syntaxcheck ✓<sup>1</sup>
+      td.debugging
+      td.doctooltips
+    tr
+      th.name
+        a(href="#visualstudio") Visual Studio
+      td.highlighting ✓
+      //-td.tomlhighlighting
+      td.snippets
+      td.completion ✓<sup>2</sup>
+      td.linting
+      td.goto ✓<sup>1</sup>
+      td.debugging ✓<sup>1</sup>
+      td.doctooltips
     tr.show_more
-      td(colspan="7") Show more IDEs ⇩
+      td(colspan="8") Show more IDEs ⇩
     //--------
     //- More -
     //--------
@@ -159,7 +173,8 @@ table#overview
       td.completion ✓<sup>2</sup>
       td.linting
       td.goto
-      td.syntaxcheck
+      td.debugging
+      td.doctooltips
 #overviewlegend
   p
     | ✓ = supported out-of-the-box,
