@@ -24,7 +24,7 @@ html(lang="en")
           | ?
 
       section
-        include table.jade
+        include table.pug
 
         h1 Text Editors
 
@@ -71,20 +71,6 @@ html(lang="en")
               | Important packages:
               a(href="https://github.com/rrandom/Brackets-Rust-IDE") Rust-IDE
             p.last-update(title="Last update") 2016-01-12
-
-          li
-            a(name="emacs")
-            h2 Emacs
-            p.packages
-              | Important packages: 
-              a(href="https://github.com/rust-lang/rust-mode") rust-mode
-              | , 
-              a(href="https://github.com/flycheck/flycheck-rust") flycheck-rust
-              | , 
-              a(href="https://github.com/racer-rust/emacs-racer") emacs-racer
-              | , 
-              a(href="https://github.com/freebroccolo/rust-snippets") rust-snippets
-            p.last-update(title="Last update") 2017-02-23
 
           li
             a(name="geany")
@@ -169,7 +155,8 @@ html(lang="en")
               a(href="https://github.com/sirver/ultisnips") UltiSnips
               | )
             p.last-update(title="Last update") 2016-01-12
-           li
+
+          li
             a(name="vscode")
             h2 VS Code
             p.packages
@@ -186,8 +173,6 @@ html(lang="en")
               | is no longer maintained.
             p.last-update(tilte="Last update") 2016-05-17
             
-
-
       section
         h1 Integrated Development Environments
 
@@ -226,6 +211,23 @@ html(lang="en")
               li ability to drag and drop to change the next code line that will be executed
               li call stack view and navigation
             p.last-update(title="Last update") 2015-09-25
+
+          li
+            a(name="emacs")
+            h2 Emacs
+            p.packages
+              | Important packages:
+              a(href="https://github.com/rust-lang/rust-mode") rust-mode
+              | ,
+              a(href="https://github.com/flycheck/flycheck-rust") flycheck-rust
+              | ,
+              a(href="https://github.com/racer-rust/emacs-racer") emacs-racer
+              | ,
+              a(href="https://github.com/freebroccolo/rust-snippets") rust-snippets
+            p.emacsinfo
+              |
+              a(href="http://wikemacs.org/wiki/Rust#Debugging") GDB with Rust
+            p.last-update(title="Last update") 2017-05-28
 
           li
             a(name="solidoak")
