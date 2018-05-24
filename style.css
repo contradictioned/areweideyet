@@ -83,6 +83,9 @@ footer > ul > li {
 	min-width: 0;
 	flex-grow: 1;
 }
+#legal p {
+	color: #888;
+}
 
 
 /* Links */
