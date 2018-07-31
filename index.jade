@@ -226,17 +226,26 @@ html(lang="en")
             a(name="eclipse")
             h2 Eclipse
             p.packages
-              | Unfortunately, 
-              a(href="https://rustdt.github.io") RustDT
-              | is discontinued and no other plugin for eclipse is in sight.
-            p.specific With RustDT installed, you get:
+              a(href="https://github.com/eclipse/corrosion") Corrosion 
+              | is a
+              a(href="https://www.eclipse.org/downloads/packages/") Rust-specific IDE 
+              | built on Eclipse (scroll down to "Eclipse IDE for Rust Developers") and
+              a(href="https://marketplace.eclipse.org/content/redox-rust-edition-eclipse-ide") an Eclipse plugin
+              |.
+            p.specific With Corrosion you get:
             ul.features
               li project wizard
+              li build integration with cargo
+              li rustup and cargo management tools
               li gdb debugging
-              li go to definitions (including code from base Rust libraries and other third party libraries)
+              li go to definitions
               li autocomplete using Racer
               li autoformat using rustfmt
-            p.last-update(title="Last update") 2017-10-16
+              li references and definitions
+              li as-you-type diagnostics
+              li rename symbol
+              li document symbol tree
+            p.last-update(title="Last update") 2018-31-07
 
           li
             a(name="visualstudio")
