@@ -28,35 +28,11 @@ html(lang="en")
             h2 Atom
             p.packages
               | Important packages:
-              ul
-                li
-                  a(href="https://atom.io/packages/language-rust") language-rust
-                li
-                  a(href="https://atom.io/packages/ide-rust") ide-rust 
-                  | automatically installs 
-                  a(href="https://atom.io/packages/language-rust") language-rust 
-                  span and 
-                  a(href="https://atom.io/packages/atom-ide-ui") atom-ide-ui
-                  | , provides rustfmt, racer, ide functionality via 
-                  a(href="https://github.com/rust-lang-nursery/rls") RLS
-                li
-                  a(href="https://atom.io/packages/linter-rust") linter-rust 
-                  | relying on 
-                  a(href="https://atom.io/packages/linter") linter
-                li: a(href="https://atom.io/packages/racer") racer
-                li: a(href="https://atom.io/packages/rustfmt") rustfmt
-                li: a(href="https://vertexclique.github.io/tokamak/") tokamak
-                li
-                  a(href="https://atom.io/packages/build-cargo") build-cargo 
-                  | relying on 
-                  a(href="https://atom.io/packages/build") build 
-                  | and  
-                  a(href="https://atom.io/packages/linter") linter
-                li
-                  a(href="https://atom.io/packages/atom-beautify") atom-beautify 
-                  | which you can use to run rustfmt
-                li: a(href="https://atom.io/packages/languageserver-rust") languageserver-rust
-            p.last-update(title="Last update") 2018-02-26
+              a(href="https://atom.io/packages/ide-rust") ide-rust 
+              | automatically prompts to install the nightly toolchain and then 
+              | sets up everything else that's needed for code completion, API 
+              | documentation lookup and so on.
+            p.last-update(title="Last update") 2019-06-29
 
           li
             a(name="bbedit")
