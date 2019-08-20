@@ -265,16 +265,29 @@ html(lang="en")
 
           li
             a(name="intellij")
-            h2 IntelliJ IDEA
+            h2 IntelliJ-based IDEs
             p.packages
-              | Important packages:
-              a(href="https://intellij-rust.github.io/") intellij-rust
+              | Plugins:
+              a(href="https://plugins.jetbrains.com/plugin/8182-rust") intellij-rust
+              | and
+              a(href="https://plugins.jetbrains.com/plugin/8195-toml") intellij-toml
+              |
             p
-              | Debugging is also supported via CLion. Check the 
-              a(href="https://github.com/intellij-rust/intellij-rust/issues/535") discussion 
-              | for progress.
-
-            p.last-update(title="Last update") 2017-08-06
+              | The plugins bring Rust and TOML support to 
+              a(href="https://www.jetbrains.com/idea/") IDEA
+              |, 
+              a(href="https://www.jetbrains.com/clion/") CLion
+              |, 
+              a(href="https://www.jetbrains.com/pycharm/") PyCharm
+              |, and other JetBrains IDEs.
+            p
+              | Language support includes syntax highlighting, completion,
+              | navigation, and other 
+              a(href="https://intellij-rust.github.io/features/") code insight features
+              |. You can work with Cargo commands and run Clippy or Rustfmt without leaving the IDE.
+            p
+              | Debugger and profiler are available in CLion.
+            p.last-update(title="Last update") 2019-08-03
 
           li
             a(name="ride")
