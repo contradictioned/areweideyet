@@ -68,7 +68,9 @@ html(lang="en")
               a(href="https://github.com/emacs-lsp/lsp-mode") lsp-mode
               | , 
               a(href="https://github.com/freebroccolo/rust-snippets") rust-snippets
-            p.last-update(title="Last update") 2018-03-04
+              | ,
+              a(href="https://github.com/brotzeit/rustic") rustic
+            p.last-update(title="Last update") 2019-07-17
 
           li
             a(name="mc")
@@ -104,10 +106,12 @@ html(lang="en")
             h2 Kate
             p.specific
               | Specific highlights:
-              | Kate is one of the few editors with syntax highlighting out-of-the-box. 
-              | Plus, there is also support for Racer and through that autocompletion. Activate it with: 
-              | Settings > Configure Kate > Plugins > Rust Code completion.
-            p.last-update(title="Last update") 2017-08-19
+              | Kate provides Rust and .toml syntax highlighting out of the box.
+              | Plus, there is also support for rls and through that autocompletion, 
+              | linting, code formatting and go-to definition.
+              | Activate it with:
+              | Settings > Configure Kate > Plugins > LSP Client.
+            p.last-update(title="Last update") 2020-05-08
 
           li
             a(name="textadept")
@@ -269,7 +273,7 @@ html(lang="en")
               a(href="https://plugins.jetbrains.com/plugin/8182-rust") intellij-rust
               | and
               a(href="https://plugins.jetbrains.com/plugin/8195-toml") intellij-toml
-              |
+              |.
             p
               | The plugins bring Rust and TOML support to 
               a(href="https://www.jetbrains.com/idea/") IDEA
@@ -360,7 +364,7 @@ html(lang="en")
             p
               | Inspiration:
               br
-              a(href="http://arewewebyet.com/") Are we web yet?
+              a(href="https://www.arewewebyet.org/") Are we web yet?
           li
             p
               | Licensed under:
