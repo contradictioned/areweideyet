@@ -140,21 +140,29 @@ html(lang="en")
 
           li
             a(name="sublime")
-            h2 Sublime Text 2/3
+            h2 Sublime Text
             p.specific
               | Sublime supports Rust out-of-the-box with syntax highlighting, snippets, build scripts,
               | and its new 
-              a(href="https://www.sublimetext.com/blog/articles/sublime-text-3-build-3124") definition system.
+              a(href="https://www.sublimetext.com/blog/articles/sublime-text-3-build-3124") definition system
+              | . To get more features, there are mainly two options: use the 
+              a(href="https://packagecontrol.io/packages/LSP") LSP
+              |  plus 
+              a(href="https://packagecontrol.io/packages/LSP-rust-analyzer") LSP-rust-analyzer
+              |  packages or the 
+              a(href="https://packagecontrol.io/packages/Rust%20Enhanced") Rust Enhanced
+              |  package. As of now, the LSP-rust-analyzer solution is arguably the preferred one, as it
+              | offers more and better features.
             p.packages
               | Important packages: 
               a(href="https://packagecontrol.io/packages/TOML") TOML
               | , 
+              a(href="https://packagecontrol.io/packages/LSP") LSP
+              | ,
+              a(href="https://packagecontrol.io/packages/LSP-rust-analyzer") LSP-rust-analyzer
+              | ,
               a(href="https://packagecontrol.io/packages/Rust%20Enhanced") Rust Enhanced
-              | , 
-              a(href="https://packagecontrol.io/packages/YcmdCompletion") YouCompleteMe plugin
-              | , 
-              a(href="https://packagecontrol.io/packages/BeautifyRust") BeautifyRust
-            p.last-update(title="Last update") 2018-08-31
+            p.last-update(title="Last update") 2021-10-14
             
           li
             a(name="vim")
@@ -204,23 +212,41 @@ html(lang="en")
           li
             a(name="vscode")
             h2 VS Code
+            p.specific
+              | There are mainly two options for developing Rust in VS Code:
+            ul
+              li
+                | VS Code has great support for the language server protocol 
+                | with the recommended language server being 
+                a(href="https://rust-analyzer.github.io/") Rust Analyzer
+                | . To use it, install 
+                a(href="https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer") the package with the same name
+                | . It automatically installs the language server for you and 
+                | prompts you to install any other required packages.
+              li 
+                | You can also use the 
+                a(href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust") Rust
+                |  package and install other useful/required packages yourself: 
+                a(href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb") CodeLLDB
+                | , 
+                a(href="https://marketplace.visualstudio.com/items?itemName=webfreak.debug") Debug
+                | , 
+                a(href="https://marketplace.visualstudio.com/items?itemName=hdevalke.rust-test-lens") Rust Test Lens
+                | .
             p.packages
-              | Important packages:
-
-              a(href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust") Rust
-              | ,
-              a(href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb") CodeLLDB
-              | , 
-              a(href="https://marketplace.visualstudio.com/items?itemName=webfreak.debug") Debug
-              | , 
-              a(href="https://marketplace.visualstudio.com/items?itemName=hdevalke.rust-test-lens") Rust Test Lens
-              | , 
-              a(href="https://marketplace.visualstudio.com/items?itemName=be5invis.toml") TOML Language Support
-              | or 
-              a(href="https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml") Better Toml
-              | , 
-              a(href="https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates") crates
-            p.last-update(tilte="Last update") 2019-07-15
+              | Other useful packages:
+              ul
+                li 
+                  | TOML support via 
+                  a(href="https://marketplace.visualstudio.com/items?itemName=be5invis.toml") TOML Language Support
+                  | , 
+                  a(href="https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml") Better Toml
+                  | , or 
+                  a(href="https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml") Even Better TOML
+                  | .
+                li
+                  a(href="https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates") crates
+            p.last-update(tilte="Last update") 2021-10-14
             
 
 
@@ -339,21 +365,42 @@ html(lang="en")
 
         ul
           li
-            a(name="racer")
-            h2 Racer
+            a(name="rust-analyzer")
+            h2 Rust Analyzer
             p
-              a(href="https://github.com/phildawes/racer") Racer
-              |  is a code completion tool for Rust that is developed standalone.
-              |  It is the basis for code completion in pretty much every setup.
-            p.last-update(title="Last update") 2015-08-16
+              a(href="https://rust-analyzer.github.io/") Rust Analyzer
+              |  is a modern language server for Rust (implementing the language 
+              | server protocol, LSP). It can be used in all editors with LSP 
+              | support. While it describes itself as alpha software, it is 
+              | already very stable and offers fantastic features. Many consider 
+              | it to be a better alternative to RLS.
+            p.last-update(title="Last update") 2021-10-14
           li
             a(name="rustfmt")
             h2 rustfmt
             p
               a(href="https://github.com/rust-lang-nursery/rustfmt") rustfmt
-              |  is a code formatting tool which can easily be installed via 
-              code cargo install rustfmt
-            p.last-update(title="Last update") 2017-02-24
+              |  is the official code formatting tool that is used by most 
+              | editor setups to format Rust code.
+            p.last-update(title="Last update") 2021-10-14
+          li
+            a(name="rls")
+            h2 Rust Language Server (RLS)
+            p
+              a(href="https://github.com/rust-lang/rls") RLS
+              |  is a language server for Rust (implementing the language 
+              | server protocol, LSP). It can be used in all editors with LSP 
+              | support. Development has slowed down recently and many consider 
+              | Rust Analyzer to be a better alternative to RLS.
+            p.last-update(title="Last update") 2021-10-14
+          li
+            a(name="racer")
+            h2 Racer
+            p
+              a(href="https://github.com/phildawes/racer") Racer
+              |  is a code completion tool for Rust that is developed standalone.
+              |  While still being maintained, it is now outclassed by Rust Analyzer.
+            p.last-update(title="Last update") 2021-10-14
           li
             a(name="rusty-tags")
             h2 rusty-tags
