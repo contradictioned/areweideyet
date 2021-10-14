@@ -140,21 +140,29 @@ html(lang="en")
 
           li
             a(name="sublime")
-            h2 Sublime Text 2/3
+            h2 Sublime Text
             p.specific
               | Sublime supports Rust out-of-the-box with syntax highlighting, snippets, build scripts,
               | and its new 
-              a(href="https://www.sublimetext.com/blog/articles/sublime-text-3-build-3124") definition system.
+              a(href="https://www.sublimetext.com/blog/articles/sublime-text-3-build-3124") definition system
+              | . To get more features, there are mainly two options: use the 
+              a(href="https://packagecontrol.io/packages/LSP") LSP
+              |  plus 
+              a(href="https://packagecontrol.io/packages/LSP-rust-analyzer") LSP-rust-analyzer
+              |  packages or the 
+              a(href="https://packagecontrol.io/packages/Rust%20Enhanced") Rust Enhanced
+              |  package. As of now, the LSP-rust-analyzer solution is arguably the preferred one, as it
+              | offers more and better features.
             p.packages
               | Important packages: 
               a(href="https://packagecontrol.io/packages/TOML") TOML
               | , 
+              a(href="https://packagecontrol.io/packages/LSP") LSP
+              | ,
+              a(href="https://packagecontrol.io/packages/LSP-rust-analyzer") LSP-rust-analyzer
+              | ,
               a(href="https://packagecontrol.io/packages/Rust%20Enhanced") Rust Enhanced
-              | , 
-              a(href="https://packagecontrol.io/packages/YcmdCompletion") YouCompleteMe plugin
-              | , 
-              a(href="https://packagecontrol.io/packages/BeautifyRust") BeautifyRust
-            p.last-update(title="Last update") 2018-08-31
+            p.last-update(title="Last update") 2021-10-14
             
           li
             a(name="vim")
