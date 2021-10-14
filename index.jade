@@ -365,21 +365,42 @@ html(lang="en")
 
         ul
           li
-            a(name="racer")
-            h2 Racer
+            a(name="rust-analyzer")
+            h2 Rust Analyzer
             p
-              a(href="https://github.com/phildawes/racer") Racer
-              |  is a code completion tool for Rust that is developed standalone.
-              |  It is the basis for code completion in pretty much every setup.
-            p.last-update(title="Last update") 2015-08-16
+              a(href="https://rust-analyzer.github.io/") Rust Analyzer
+              |  is a modern language server for Rust (implementing the language 
+              | server protocol, LSP). It can be used in all editors with LSP 
+              | support. While it describes itself as alpha software, it is 
+              | already very stable and offers fantastic features. Many consider 
+              | it to be a better alternative to RLS.
+            p.last-update(title="Last update") 2021-10-14
           li
             a(name="rustfmt")
             h2 rustfmt
             p
               a(href="https://github.com/rust-lang-nursery/rustfmt") rustfmt
-              |  is a code formatting tool which can easily be installed via 
-              code cargo install rustfmt
-            p.last-update(title="Last update") 2017-02-24
+              |  is the official code formatting tool that is used by most 
+              | editor setups to format Rust code.
+            p.last-update(title="Last update") 2021-10-14
+          li
+            a(name="rls")
+            h2 Rust Language Server (RLS)
+            p
+              a(href="https://github.com/rust-lang/rls") RLS
+              |  is a language server for Rust (implementing the language 
+              | server protocol, LSP). It can be used in all editors with LSP 
+              | support. Development has slowed down recently and many consider 
+              | Rust Analyzer to be a better alternative to RLS.
+            p.last-update(title="Last update") 2021-10-14
+          li
+            a(name="racer")
+            h2 Racer
+            p
+              a(href="https://github.com/phildawes/racer") Racer
+              |  is a code completion tool for Rust that is developed standalone.
+              |  While still being maintained, it is now outclassed by Rust Analyzer.
+            p.last-update(title="Last update") 2021-10-14
           li
             a(name="rusty-tags")
             h2 rusty-tags
