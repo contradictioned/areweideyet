@@ -63,14 +63,12 @@ html(lang="en")
               | , 
               a(href="https://github.com/flycheck/flycheck-rust") flycheck-rust
               | , 
-              a(href="https://github.com/racer-rust/emacs-racer") emacs-racer
-              | , 
               a(href="https://github.com/emacs-lsp/lsp-mode") lsp-mode
               | , 
               a(href="https://github.com/freebroccolo/rust-snippets") rust-snippets
               | ,
               a(href="https://github.com/brotzeit/rustic") rustic
-            p.last-update(title="Last update") 2019-07-17
+            p.last-update(title="Last update") 2022-10-08
 
           li
             a(name="micro")
@@ -108,9 +106,7 @@ html(lang="en")
               a(href="https://github.com/chronologicaldot/GEdit-Rust-lang") GEdit-Rust-lang (syntax highlighting)
               | , 
               a(href="https://github.com/rust-lang/gedit-config") gedit-config (also syntax highlighting)
-              | , 
-              a(href="https://github.com/isamert/gracer") gracer
-            p.last-update(title="Last update") 2016-10-09
+            p.last-update(title="Last update") 2022-10-08
 
           li
             a(name="kate")
@@ -172,18 +168,11 @@ html(lang="en")
                 li
                   a(href="http://blog.jwilm.io/youcompleteme-rust") YouCompleteMe-rust
                 li
-                  a(href="https://github.com/racer-rust/vim-racer") vim-racer
-                li
                   a(href="https://github.com/scrooloose/syntastic") syntastic
                 li
                   a(href="https://github.com/honza/vim-snippets") vim-snippets
                   |  (relying on 
                   a(href="https://github.com/sirver/ultisnips") UltiSnips
-                  | )
-                li
-                  a(href="https://github.com/ncm2/ncm2-racer") ncm2-racer
-                  |  (relying on 
-                  a(href="https://github.com/ncm2/ncm2") ncm2
                   | )
             p.packages
               | Important Neovim-only packages:
@@ -193,21 +182,14 @@ html(lang="en")
                   |  (
                   a(href="https://github.com/dbgx/lldb.nvim/commit/56dfc2d945") unmaintained
                   |  as of 2018-03-11)
-                li
-                  a(href="https://github.com/roxma/nvim-cm-racer") nvim-cm-racer
-                  |  (relying on 
-                  a(href="https://github.com/roxma/nvim-completion-manager") nvim-completion-manager
-                  | , which is 
-                  a(href="https://github.com/roxma/nvim-completion-manager/issues/12#issuecomment-382334422") unmaintained
-                  |  as of 2018-04-18)
-            p.last-update(title="Last update") 2019-07-15
+            p.last-update(title="Last update") 2022-10-08
           li
             a(name="vscode")
             h2 VS Code
             p.packages
               | Important packages:
 
-              a(href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust") Rust
+              a(href="https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer") rust-analyzer
               | ,
               a(href="https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb") CodeLLDB
               | , 
@@ -220,7 +202,7 @@ html(lang="en")
               a(href="https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml") Better Toml
               | , 
               a(href="https://marketplace.visualstudio.com/items?itemName=serayuzgur.crates") crates
-            p.last-update(tilte="Last update") 2019-07-15
+            p.last-update(tilte="Last update") 2022-10-08
             
 
 
@@ -245,7 +227,7 @@ html(lang="en")
               li rustup and cargo management tools
               li gdb debugging
               li go to definitions
-              li autocomplete using Racer
+              li autocomplete
               li autoformat using rustfmt
               li references and definitions
               li as-you-type diagnostics
@@ -265,7 +247,7 @@ html(lang="en")
             ul.features
               li project support
               li build scripts
-              li autocomplete using Racer
+              li autocomplete
               li go to definition (including code from base Rust libraries and other third party libraries)
               li debugger powered by MIEngine
               li conditional breakpoints
@@ -339,13 +321,13 @@ html(lang="en")
 
         ul
           li
-            a(name="racer")
-            h2 Racer
+            a(name="rust-analyzer")
+            h2 rust-analyzer
             p
-              a(href="https://github.com/phildawes/racer") Racer
-              |  is a code completion tool for Rust that is developed standalone.
+              a(href="https://github.com/rust-lang/rust-analyzer") rust-analyzer
+              |  is a code completion and type checker tool for Rust.
               |  It is the basis for code completion in pretty much every setup.
-            p.last-update(title="Last update") 2015-08-16
+            p.last-update(title="Last update") 2022-10-08
           li
             a(name="rustfmt")
             h2 rustfmt
